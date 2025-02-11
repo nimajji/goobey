@@ -25,8 +25,8 @@ h4 {
 .card {
 	color: #013243; /*SHERPA BLUE*/
 	position: absolute;
-	top: 40%;
-	left: 40%;
+	top: 50%;
+	left: 50%;
 	width: 300px;
 	height: 400px;
 	background: #e0e1dc;
@@ -259,7 +259,7 @@ body {
   }
 
   #top-gallery {
-    margin-top: 10vh; 
+    margin-top: 10vh; /* Adjust for smaller screens */
   }
 
   #bottom-gallery {
