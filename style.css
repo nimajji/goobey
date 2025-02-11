@@ -27,8 +27,8 @@ h4 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 300px;
-	height: 400px;
+	width: 350px;
+	height: 600px;
 	background: #e0e1dc;
 	transform-style: preserve-3d;
 	transform: translate(-50%,-50%) perspective(2000px);
@@ -83,8 +83,8 @@ h4 {
 }
 
 .card .imgBox img {
-	min-width: 250px;
-	max-height: 400px;
+	min-width: 350px;
+	max-height: 600px;
 }
 
 .card:hover .imgBox {
