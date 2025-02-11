@@ -197,7 +197,7 @@ h4 {
 
 body {
   margin: 0;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column; /* Stack galleries vertically */
   justify-content: center; /* Center vertically */
@@ -208,11 +208,11 @@ body {
 }
 
 #top-gallery {
-  margin-top: 10vh; /* Push the top gallery higher */
+  margin-top: 8vh; /* Push the top gallery higher */
 }
 
 #bottom-gallery {
-  margin-bottom: 10vh; /* Push the bottom gallery lower */
+  margin-bottom: 15vh; /* Push the bottom gallery lower */
 }
 
 #shine {
