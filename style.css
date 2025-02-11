@@ -204,7 +204,7 @@ body {
   align-items: center; /* Center horizontally */
   background: #fcd164;
   overflow: hidden;
-  gap: 30vh; /* Increase vertical space between the two galleries */
+  gap: 40vh; /* Increase vertical space between the two galleries */
 }
 
 #top-gallery {
