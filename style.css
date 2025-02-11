@@ -204,11 +204,11 @@ body {
   align-items: center; /* Center horizontally */
   background: #fcd164;
   overflow: hidden;
-  gap: 30vh; /* Increase vertical space between the two galleries */
+  gap: 40vh; /* Increase vertical space between the two galleries */
 }
 
 #top-gallery {
-  margin-top: 10vh; /* Push the top gallery higher */
+  margin-top: 20vh; /* Push the top gallery higher */
 }
 
 #bottom-gallery {
@@ -259,7 +259,7 @@ body {
   }
 
   #top-gallery {
-    margin-top: 5vh; /* Adjust for smaller screens */
+    margin-top: 10vh; /* Adjust for smaller screens */
   }
 
   #bottom-gallery {
