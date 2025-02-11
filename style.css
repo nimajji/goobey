@@ -83,8 +83,8 @@ h4 {
 }
 
 .card .imgBox img {
-	min-width: 250px;
-	max-height: 400px;
+	min-width: 350px;
+	max-height: 500px;
 }
 
 .card:hover .imgBox {
@@ -208,11 +208,11 @@ body {
 }
 
 #top-gallery {
-  margin-top: 5vh; /* Push the top gallery higher */
+  margin-top: 10vh; /* Push the top gallery higher */
 }
 
 #bottom-gallery {
-  margin-bottom: 15vh; /* Push the bottom gallery lower */
+  margin-bottom: 10vh; /* Push the bottom gallery lower */
 }
 
 #shine {
