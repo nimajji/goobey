@@ -255,11 +255,11 @@ body {
   }
 
   body {
-    gap: 20vh; /* Reduce gap for small screens */
+    gap: 20vh; 
   }
 
   #top-gallery {
-    margin-top: 10vh; /* Adjust for smaller screens */
+    margin-top: 10vh; 
   }
 
   #bottom-gallery {
