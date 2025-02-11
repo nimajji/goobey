@@ -202,9 +202,17 @@ body {
   flex-direction: column; /* Stack galleries vertically */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  background: #f8c23a;
+  background: #fcd164;
   overflow: hidden;
-  gap: 30vh; /* Add vertical space between the two galleries */
+  gap: 30vh; /* Increase vertical space between the two galleries */
+}
+
+#top-gallery {
+  margin-top: 10vh; /* Push the top gallery higher */
+}
+
+#bottom-gallery {
+  margin-bottom: 10vh; /* Push the bottom gallery lower */
 }
 
 #shine {
@@ -247,6 +255,14 @@ body {
   }
 
   body {
-    gap: 10vh; /* Reduce gap for small screens */
+    gap: 20vh; /* Reduce gap for small screens */
+  }
+
+  #top-gallery {
+    margin-top: 5vh; /* Adjust for smaller screens */
+  }
+
+  #bottom-gallery {
+    margin-bottom: 5vh; /* Adjust for smaller screens */
   }
 }
