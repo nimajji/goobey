@@ -208,7 +208,7 @@ body {
 }
 
 #top-gallery {
-  margin-top: 30vh; /* Push the top gallery higher */
+  margin-top: 50vh; /* Push the top gallery higher */
 }
 
 #bottom-gallery {
@@ -259,7 +259,7 @@ body {
   }
 
   #top-gallery {
-    margin-top: 20vh; /* Adjust for smaller screens */
+    margin-top: 50vh;
   }
 
   #bottom-gallery {
