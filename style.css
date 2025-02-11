@@ -125,7 +125,7 @@ h4 {
   --d: 10s; /* duration */
   display: grid;
   place-items: center; /* Center both horizontally and vertically */
-  width: 220px;
+  width: 220px; /* Adjust width for 19.5:9 ratio */
 }
 
 .gallery > img {
@@ -204,7 +204,7 @@ body {
   align-items: center; /* Center horizontally */
   background: #f8f6f1;
   overflow: hidden;
-  gap: 100px; /* Add space between the two galleries */
+  gap: 20vh; /* Add vertical space between the two galleries */
 }
 
 #shine {
@@ -243,10 +243,10 @@ body {
 
   .gallery {
     --d: 10s;
-    width: 150px;
+    width: 150px; /* Adjust width for smaller screens */
   }
 
   body {
-    gap: 50px; /* Reduce gap for small screens */
+    gap: 10vh; /* Reduce gap for small screens */
   }
 }
