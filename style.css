@@ -67,8 +67,7 @@ h4 {
 
 .card .imgBox {
 	width: 100%;
-	height: auto;
-	 object-fit: cover;
+	height: 100%;
 	position: relative;
 	transform-origin: left;
 	transition: .7s;
