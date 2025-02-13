@@ -46,7 +46,7 @@ h4 {
 	position: absolute;
 	top: -5px;
 	left: 0;
-	width: 100%;
+	width: autp;/* Maintain aspect ratio */
 	height: 5px;
 	background: #BAC1BA;
 	transform-origin: bottom;
