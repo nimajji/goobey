@@ -46,8 +46,8 @@ h4 {
 	position: absolute;
 	top: -5px;
 	left: 0;
-	width: autp;/* Maintain aspect ratio */
-	height: 5px;
+	width: auto;/* Maintain aspect ratio */
+	height: auto;/* Maintain aspect ratio */
 	background: #BAC1BA;
 	transform-origin: bottom;
 	transform: skewX(-45deg);
