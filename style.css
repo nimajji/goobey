@@ -46,7 +46,7 @@ h4 {
 	position: absolute;
 	top: -5px;
 	left: 0;
-	width: auto;/* Maintain aspect ratio */
+	width: auto;
 	height: 100%;
 	background: #BAC1BA;
 	transform-origin: bottom;
@@ -125,7 +125,8 @@ h4 {
   --d: 10s; /* duration */
   display: flex;
 	flex-wrap: wrap;
-gap: 10px;
+	 place-items: center; /* Center both horizontally and vertically */
+width: 220px;
 	justify-content: center;
 }
 
