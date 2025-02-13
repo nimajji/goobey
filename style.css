@@ -123,14 +123,15 @@ h4 {
 }
 .gallery {
   --d: 10s; /* duration */
-  display: grid;
-  place-items: center; /* Center both horizontally and vertically */
-  width: 220px; /* Adjust width for 19.5:9 ratio */
+  display: flex;
+	flex-wrap: wrap;
+gap: 10px;
+	justify-content: center;
 }
 
 .gallery > img {
   grid-area: 1/1;
-  width: 100%;
+  width: auto; /* Maintain aspect ratio */
   aspect-ratio: 1;
   object-fit: cover;
   border: 10px solid #f2f2f2;
