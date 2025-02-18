@@ -207,7 +207,7 @@ body {
   flex-direction: column; /* Stack galleries vertically */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  background: #400000;
+  background: #310000;
   overflow: hidden;
   gap: 40vh; /* Increase vertical space between the two galleries */
 }
