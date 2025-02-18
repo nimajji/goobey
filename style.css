@@ -143,7 +143,7 @@ width: 220px;
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border: 10px solid #ccc6c6;
+  border: 10px solid #ebe6e6;
   box-shadow: 0 0 4px #0007;
   z-index: 2; position: relative; 
   animation: slide var(--d) infinite, z-order var(--d) infinite steps(1);
