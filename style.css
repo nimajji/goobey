@@ -42,16 +42,16 @@ h4 {
 }
 
 .card:before {
-	content:'';
-	position: absolute;
-	top: -5px;
-	left: 0;
-	width: auto;
-	height: 100%;
-	object-fit; cover;
-	background: #BAC1BA;
-	transform-origin: bottom;
-	transform: skewX(-45deg);
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: auto;
+  height: 100%;
+  object-fit: cover; /* ✅ Corrected */
+  background: #BAC1BA;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
 }
 
 .card:after {
@@ -258,6 +258,7 @@ body {
     --d: 10s;
     width: 150px; /* Adjust width for smaller screens */
   }
+}
 
   body {
     gap: 10vh; 
@@ -267,33 +268,53 @@ body {
     margin-top: 10vh;
   }
 
-#play-music {
-  position: absolute;
-  bottom: 20px;
-  left: 100%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: #ff4081;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
+  #play-music {
+    position: absolute;
+    bottom: 20px;
+    left: 50%; /* ✅ Centers horizontally */
+    transform: translateX(-50%); /* ✅ Ensures proper centering */
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
 /* Floating Heart Animation */
 .floating-heart {
-  position: absolute;
+  position: float;
   font-size: 40px;
-  animation: float 3s ease-in-out;
   pointer-events: none; /* Prevent interaction */
+  z-index: 1000; /* Ensure visibility */
 }
 
-/* Floating Animation */
+/* Floating up (default) */
 @keyframes float {
   0% { transform: translateY(0); opacity: 1; }
   50% { transform: translateY(-50px); opacity: 0.7; }
   100% { transform: translateY(-100px); opacity: 0; }
 }
-  #bottom-gallery {
-    margin-bottom: 5vh; 
-  }
+
+/* Floating + Side-to-Side Wobble */
+@keyframes float-wobble {
+  0% { transform: translate(0, 0); opacity: 1; }
+  25% { transform: translate(-10px, -30px) rotate(-10deg); }
+  50% { transform: translate(10px, -60px) rotate(10deg); }
+  75% { transform: translate(-5px, -90px) rotate(-5deg); }
+  100% { transform: translate(5px, -120px) rotate(5deg); opacity: 0; }
+}
+
+/* Floating + Growing */
+@keyframes float-grow {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  50% { transform: translateY(-50px) scale(1.5); opacity: 0.7; }
+  100% { transform: translateY(-100px) scale(2); opacity: 0; }
+}
+
+/* Floating + Spinning */
+@keyframes float-spin {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  50% { transform: translateY(-50px) rotate(180deg); opacity: 0.7; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
 }
