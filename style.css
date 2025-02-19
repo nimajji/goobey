@@ -39,6 +39,7 @@ h4 {
 .card:hover {
 	transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2);
 	box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+  z-index: 2; /* Ensure the card is above the galleries */
 }
 
 .card:before {
@@ -145,7 +146,7 @@ width: 220px;
   object-fit: cover;
   border: 10px solid #ebe6e6;
   box-shadow: 0 0 4px #0007;
-  z-index: 2; position: relative; 
+  z-index: 1; position: relative; 
   animation: slide var(--d) infinite, z-order var(--d) infinite steps(1);
 }
 .gallery > img:nth-child(1) {
@@ -209,15 +210,24 @@ body {
   align-items: center; /* Center horizontally */
   background: #310000;
   overflow: hidden;
-  gap: 40vh; /* Increase vertical space between the two galleries */
+  gap: 20vh; /* Increase vertical space between the two galleries */
 }
 
 #top-gallery {
-  margin-top: 10vh; /* Push the top gallery higher */
+  position: absolute;
+  top: 0; /* Push the top gallery to the very top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure the top gallery is below the card */
 }
 
+
 #bottom-gallery {
-  margin-bottom: 10vh; /* Push the bottom gallery lower */
+  position: absolute;
+  bottom: 0; /* Push the bottom gallery to the very bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure the bottom gallery is below the card */
 }
 
 #shine {
