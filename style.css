@@ -279,7 +279,20 @@ body {
   cursor: pointer;
   font-size: 16px;
 }
+/* Floating Heart Animation */
+.floating-heart {
+  position: absolute;
+  font-size: 40px;
+  animation: float 3s ease-in-out;
+  pointer-events: none; /* Prevent interaction */
+}
 
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-50px); opacity: 0.7; }
+  100% { transform: translateY(-100px); opacity: 0; }
+}
   #bottom-gallery {
     margin-bottom: 5vh; 
   }
