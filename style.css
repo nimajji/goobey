@@ -207,7 +207,7 @@ body {
 
 #top-gallery {
   position: absolute;
-  top: 0; /* Push the top gallery to the very top */
+  top: 5%; /* Push the top gallery to the very top */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1; /* Ensure the top gallery is below the card */
@@ -216,7 +216,7 @@ body {
 
 #bottom-gallery {
   position: absolute;
-  bottom: 0; /* Push the bottom gallery to the very bottom */
+  bottom: 15%; /* Bring it up closer to the card (adjust as needed) */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1; /* Ensure the bottom gallery is below the card */
