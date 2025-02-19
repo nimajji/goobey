@@ -58,7 +58,27 @@
 
  <!-- Audio Element -->
    <audio id="valentine-music" src="https://www.dropbox.com/scl/fi/317prc971a2nzwrh4mvgv/PUBLIC-Make-You-Mine-Official-Lyric-Video.mp3?rlkey=brtxkyx8ziidkjqd5o6lunvub&st=b0zep4th&dl=1" loop controls></audio>
- 
+  <script>
+    const audio = document.getElementById('valentine-music');
+    const card = document.querySelector('.card');
+
+    let isCardOpen = false; // Track whether the card is open or closed
+
+    // Toggle card state and play/pause music
+    card.addEventListener('click', () => {
+      isCardOpen = !isCardOpen; // Toggle card state
+
+      if (isCardOpen) {
+        card.classList.add('open'); // Add 'open' class to card
+        audio.play(); // Play music when card is open
+      } else {
+        card.classList.remove('open'); // Remove 'open' class from card
+        audio.pause(); // Pause music when card is closed
+      }
+    });
+
+    audio.volume = 1; // Set volume to 100%
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
