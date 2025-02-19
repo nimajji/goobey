@@ -17,6 +17,7 @@ card.addEventListener('click', () => {
 });
 
 audio.volume = 1; // Set volume to 100%
+
 document.addEventListener('click', function(event) {
   const heart = document.createElement('span');
   heart.innerHTML = '💖';
