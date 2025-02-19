@@ -268,25 +268,12 @@ body {
     margin-top: 10vh;
   }
 
-  #play-music {
-    position: absolute;
-    bottom: 20px;
-    left: 50%; /* ✅ Centers horizontally */
-    transform: translateX(-50%); /* ✅ Ensures proper centering */
-    padding: 10px 20px;
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
 /* Floating Heart Animation */
 .floating-heart {
   position: float;
   font-size: 40px;
   pointer-events: none; /* Prevent interaction */
-  z-index: 1000; /* Ensure visibility */
+  z-index: 1; /* Ensure visibility */
 }
 
 /* Floating up (default) */
