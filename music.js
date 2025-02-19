@@ -17,3 +17,19 @@ card.addEventListener('click', () => {
 });
 
 audio.volume = 1; // Set volume to 100%
+document.addEventListener('click', function(event) {
+  const heart = document.createElement('span');
+  heart.innerHTML = '💖';
+  heart.classList.add('floating-heart');
+
+  // Set heart position at click location
+  heart.style.left = `${event.clientX}px`;
+  heart.style.top = `${event.clientY}px`;
+
+  document.body.appendChild(heart);
+
+  // Remove heart after 3 seconds
+  setTimeout(() => {
+      heart.remove();
+  }, 3000);
+});
