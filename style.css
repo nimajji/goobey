@@ -123,14 +123,6 @@ h4 {
 .text-right {
 	text-align: right;
 }
-.gallery {
-  --d: 10s; /* duration */
-  display: flex;
-	flex-wrap: wrap;
-	 place-items: center; /* Center both horizontally and vertically */
-width: 220px;
-	justify-content: center;
-}
 
 .gallery {
   --d: 10s; /* duration */
@@ -210,7 +202,7 @@ body {
   align-items: center; /* Center horizontally */
   background: #310000;
   overflow: hidden;
-  gap: 20vh; /* Increase vertical space between the two galleries */
+  gap: 40vh; /* Increase vertical space between the two galleries */
 }
 
 #top-gallery {
