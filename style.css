@@ -278,13 +278,6 @@ body {
   z-index: 1; /* Ensure visibility */
 }
 
-/* Floating up (default) */
-@keyframes float {
-  0% { transform: translateY(0); opacity: 1; }
-  50% { transform: translateY(-50px); opacity: 0.7; }
-  100% { transform: translateY(-100px); opacity: 0; }
-}
-
 /* Floating + Side-to-Side Wobble */
 @keyframes float-wobble {
   0% { transform: translate(0, 0); opacity: 1; }
