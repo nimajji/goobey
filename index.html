@@ -11,7 +11,7 @@
   <div class="card">
     <div class="imgBox">
       <div class="bark"></div>
-     <img src="https://lh3.googleusercontent.com/d/1wekEQInNcMMaTGveuzZOymf5yYg9mqkn" alt="Card Image" width="400" height="550">
+      <img src="https://lh3.googleusercontent.com/d/1wekEQInNcMMaTGveuzZOymf5yYg9mqkn" alt="Card Image" width="400" height="550">
     </div>
     <div class="details">
       <h4 class="color1">To Priya, you are my home❤!</h4>
@@ -56,31 +56,9 @@
     <img src="https://lh3.googleusercontent.com/d/1weOK42MG0pLi2cURDC_4pABCLQHWdvCk" alt="Image 10" width="400" height="300">
   </div>
 
- <!-- Audio Element -->
-   <audio id="valentine-music" src="https://www.dropbox.com/scl/fi/317prc971a2nzwrh4mvgv/PUBLIC-Make-You-Mine-Official-Lyric-Video.mp3?rlkey=brtxkyx8ziidkjqd5o6lunvub&st=b0zep4th&dl=1" loop controls></audio>
-   <script>
-    const audio = document.getElementById('valentine-music');
-    const card = document.querySelector('.card');
+  <!-- Audio Element -->
+  <audio id="valentine-music" src="https://www.dropbox.com/scl/fi/317prc971a2nzwrh4mvgv/PUBLIC-Make-You-Mine-Official-Lyric-Video.mp3?rlkey=brtxkyx8ziidkjqd5o6lunvub&st=b0zep4th&dl=1" loop controls style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 1;"></audio>
 
-    <button id="play-music">Play Music</button>
-
-    let isCardOpen = false; // Track whether the card is open or closed
-
-    // Toggle card state and play/pause music
-    card.addEventListener('click', () => {
-      isCardOpen = !isCardOpen; // Toggle card state
-
-      if (isCardOpen) {
-        card.classList.add('open'); // Add 'open' class to card
-        audio.play(); // Play music when card is open
-      } else {
-        card.classList.remove('open'); // Remove 'open' class from card
-        audio.pause(); // Pause music when card is closed
-      }
-    });
-
-    audio.volume = 1; // Set volume to 100%
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
