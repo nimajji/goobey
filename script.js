@@ -26,7 +26,7 @@ document.addEventListener('click', function(event) {
   heart.classList.add('floating-heart');
 
   // List of available animations
-  const animations = ['float', 'float-wobble', 'float-grow', 'float-spin',];
+  const animations = ['float-wobble', 'float-grow', 'float-spin',];
   
   // Pick a random animation from the list
   const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
