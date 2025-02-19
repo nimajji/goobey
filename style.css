@@ -273,7 +273,7 @@ body {
 /* Floating Heart Animation */
 .floating-heart {
   position: float;
-  font-size: 40px;
+  font-size: 80px;
   pointer-events: none; /* Prevent interaction */
   z-index: 1; /* Ensure visibility */
 }
